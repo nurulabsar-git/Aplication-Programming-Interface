@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Practice</title>
+</head>
+<body>
+   <h1>Chose Your Work</h1>
+   <h1>Chose Your Work</h1>
+
+
+   <script>
+       fetch('http://www.boredapi.com/api/activity/')
+       .then(result => result.json())
+       .then(yourWorkList => {
+           console.log(yourWorkList);
+       })
+   </script>
+</body>
+</html>
