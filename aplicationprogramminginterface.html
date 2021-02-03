@@ -7,14 +7,14 @@
 </head>
 <body>
    <h1>Chose Your Work</h1>
-   <h1>Chose Your Work</h1>
+   <h4 id="show-me">Chose Your Work</h4>
 
 
    <script>
        fetch('http://www.boredapi.com/api/activity/')
        .then(result => result.json())
        .then(yourWorkList => {
-           console.log(yourWorkList);
+          document.getElementById('show-me').innerText = yourWorkList.activity;
        })
    </script>
 </body>
